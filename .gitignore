@@ -1,0 +1,22 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python cache and test files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local databases and associated files
+*.db
+*.db-shm
+*.db-wal
+
+# Uploaded documents
+private_storage/
+test_private_storage/
+
+# Secrets and local environment settings
+.env
+.env.*
+!.env.example

@@ -1,0 +1,12 @@
+services:
+  trustvault:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      SECRET_KEY: "replace-with-long-random-secret"
+      DATABASE_URL: "sqlite:///./trustvault.db"
+      STORAGE_DIR: "/data/private"
+    volumes:
+      - trustvault-data:/data
+volumes:
+  trustvault-data:
